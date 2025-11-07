@@ -27,23 +27,3 @@ Esta sección contiene los comandos originales generados por el CLI de Angular.
 ### Servidor de Desarrollo
 
 Ejecuta `ng serve` para levantar el servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
-
-### Generar Código (Scaffolding)
-
-Ejecuta `ng generate component nombre-componente` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-### Compilación (Build)
-
-Ejecuta `ng build` para compilar el proyecto. Los artefactos de la compilación se guardarán en el directorio `dist/`.
-
-### Pruebas Unitarias
-
-Ejecuta `ng test` para ejecutar las pruebas unitarias vía [Karma](https://karma-runner.github.io).
-
-### Pruebas End-to-End
-
-Ejecuta `ng e2e` para ejecutar las pruebas end-to-end.
-
-### Más Ayuda
-
-Para obtener más ayuda sobre el Angular CLI, usa `ng help` o visita la [guía de referencia de comandos del CLI](https://angular.dev/tools/cli).
