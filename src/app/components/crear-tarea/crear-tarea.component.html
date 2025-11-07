@@ -1,0 +1,21 @@
+<div class="crear-tarea-container">
+  <h3>Agregar Nueva Tarea</h3>
+  <div class="form-group">
+    <input
+      type="text"
+      [(ngModel)]="nuevaTarea"
+      placeholder="Escribe el título de la tarea..."
+      class="tarea-input"
+      (keyup.enter)="agregarTarea()"
+    />
+    <button
+      type="button"
+      class="btn-agregar"
+      (click)="agregarTarea()"
+      [disabled]="!nuevaTarea.trim()"
+    >
+      Agregar Tarea
+    </button>
+  </div>
+</div>
+

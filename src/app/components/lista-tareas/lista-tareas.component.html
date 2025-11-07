@@ -1,0 +1,17 @@
+<div class="lista-tareas-container">
+    <h2>Lista de Tareas</h2>
+    <div class="tareas-list" *ngIf="tareas.length > 0; else sinTareas">
+        <div class="tarea-item" *ngFor="let tarea of tareas">
+            <div class="tarea-content">
+                <span class="tarea-titulo">{{ tarea.titulo | capitalizar }}</span>
+                <span class="tarea-fecha">{{ formatearFecha(tarea.fechaCreacion) }}</span>
+            </div>
+            <button class="btn-eliminar" (click)="eliminarTarea(tarea.id)" type="button">
+                Eliminar
+            </button>
+        </div>
+    </div>
+    <ng-template #sinTareas>
+        <p class="sin-tareas">No hay tareas disponibles</p>
+    </ng-template>
+</div>

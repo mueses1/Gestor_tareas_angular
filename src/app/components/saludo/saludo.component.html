@@ -1,0 +1,16 @@
+<div class="saludo-container">
+  <h2>Saludo</h2>
+  <div class="input-group">
+    <label for="nombre">Escribe tu nombre:</label>
+    <input 
+      id="nombre" 
+      type="text" 
+      [(ngModel)]="nombre" 
+      placeholder="Ingresa tu nombre"
+      class="nombre-input"
+    />
+  </div>
+  <p class="mensaje" *ngIf="nombre">¡Hola {{ nombre }}!</p>
+  <p class="mensaje-placeholder" *ngIf="!nombre">Escribe tu nombre para ver el saludo</p>
+</div>
+
