@@ -4,7 +4,7 @@
         <div class="tarea-item" *ngFor="let tarea of tareas">
             <div class="tarea-content">
                 <span class="tarea-titulo">{{ tarea.titulo | capitalizar }}</span>
-                <span class="tarea-fecha">{{ formatearFecha(tarea.fechaCreacion) }}</span>
+                <span class="tarea-fecha">{{ tarea.fechaCreacion | date:'d \'de\' MMMM \'de\' y, h:mm a' }}</span>
             </div>
             <button class="btn-eliminar" (click)="eliminarTarea(tarea.id)" type="button">
                 Eliminar

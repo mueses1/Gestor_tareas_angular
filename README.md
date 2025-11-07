@@ -1,59 +1,49 @@
-# GestorTareas
+# Gestor de Tareas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+Este proyecto es una aplicación web para la gestión de tareas, desarrollada con Angular como practica para aprender Angular. Permite a los usuarios crear, visualizar y eliminar tareas de una lista interactiva. La aplicación está diseñada siguiendo las mejores prácticas de Angular, utilizando una arquitectura basada en componentes y servicios.
 
-## Development server
+## Características Principales
 
-To start a local development server, run:
+*   **Crear Tareas:** Formulario para añadir nuevas tareas a la lista.
+*   **Listar Tareas:** Visualización en tiempo real de todas las tareas pendientes.
+*   **Eliminar Tareas:** Funcionalidad para quitar tareas de la lista.
+*   **Pipes Personalizados:** Se utiliza un pipe `capitalizar` para dar formato a los títulos de las tareas.
+*   **Formato de Fechas Avanzado:** Uso del `DatePipe` integrado de Angular, configurado en español, para mostrar la fecha y hora de creación de cada tarea en un formato legible (ej: "7 de noviembre de 2025, 4:50 p. m.").
+*   **Arquitectura Modular:** La lógica está separada en componentes (`ListaTareasComponent`, `CrearTareaComponent`) y servicios (`TareasService`) para una mejor mantenibilidad y escalabilidad.
 
-```bash
-ng serve
-```
+## Tecnologías Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+*   **Angular:** Framework principal para el desarrollo de la aplicación.
+*   **TypeScript:** Lenguaje de programación para un código más robusto y mantenible.
+*   **Vite:** Servidor de desarrollo rápido y moderno.
+*   **HTML5 y CSS:** Para la estructura y el estilo de la aplicación.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Comandos del CLI de Angular
 
-```bash
-ng generate component component-name
-```
+Esta sección contiene los comandos originales generados por el CLI de Angular.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Servidor de Desarrollo
 
-```bash
-ng generate --help
-```
+Ejecuta `ng serve` para levantar el servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-## Building
+### Generar Código (Scaffolding)
 
-To build the project run:
+Ejecuta `ng generate component nombre-componente` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```bash
-ng build
-```
+### Compilación (Build)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Ejecuta `ng build` para compilar el proyecto. Los artefactos de la compilación se guardarán en el directorio `dist/`.
 
-## Running unit tests
+### Pruebas Unitarias
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Ejecuta `ng test` para ejecutar las pruebas unitarias vía [Karma](https://karma-runner.github.io).
 
-```bash
-ng test
-```
+### Pruebas End-to-End
 
-## Running end-to-end tests
+Ejecuta `ng e2e` para ejecutar las pruebas end-to-end.
 
-For end-to-end (e2e) testing, run:
+### Más Ayuda
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para obtener más ayuda sobre el Angular CLI, usa `ng help` o visita la [guía de referencia de comandos del CLI](https://angular.dev/tools/cli).
